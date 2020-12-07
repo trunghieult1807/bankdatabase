@@ -1,0 +1,6 @@
+package com.example.bankdatabase
+
+import io.flutter.embedding.android.FlutterActivity
+
+class MainActivity: FlutterActivity() {
+}
