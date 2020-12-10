@@ -1,8 +1,8 @@
 import 'package:bottom_navy_bar/bottom_navy_bar.dart';
 import 'package:flutter/material.dart';
-import 'package:bankdatabase/home/accountScreen.dart';
+import 'package:bankdatabase/account/accountScreen.dart';
 import 'package:bankdatabase/home/homeScreenController.dart';
-import 'package:bankdatabase/home/searchScreen.dart';
+import 'package:bankdatabase/search/searchScreen.dart';
 
 class MainScreen extends StatelessWidget {
   @override
