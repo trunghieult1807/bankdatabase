@@ -14,6 +14,10 @@ bottom_navy_bar
 2.2
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/bottom_navy_bar-5.6.0/
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/bottom_navy_bar-5.6.0/lib/
+buffer
+2.7
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/buffer-1.0.7/
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/buffer-1.0.7/lib/
 characters
 2.10
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/characters-1.1.0-nullsafety.3/
@@ -30,6 +34,14 @@ collection
 2.10
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0-nullsafety.3/
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/collection-1.15.0-nullsafety.3/lib/
+convert
+1.17
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1/
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/convert-2.1.1/lib/
+crypto
+2.3
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.5/
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/crypto-2.1.5/lib/
 cupertino_icons
 2.0
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/cupertino_icons-1.0.0/
@@ -70,6 +82,10 @@ path
 2.10
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.1/
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/path-1.8.0-nullsafety.1/lib/
+postgres
+2.8
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/postgres-2.2.0/
+file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/postgres-2.2.0/lib/
 provider
 2.7
 file:///Applications/flutter/.pub-cache/hosted/pub.dartlang.org/provider-4.3.2+3/

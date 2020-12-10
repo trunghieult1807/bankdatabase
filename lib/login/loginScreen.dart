@@ -1,8 +1,6 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:bankdatabase/login/delayed_animation.dart';
-import 'package:bankdatabase/login/signUpScreen.dart';
-import 'package:bankdatabase/backend.dart';
 import 'package:bankdatabase/home/mainScreen.dart';
 
 
@@ -133,23 +131,6 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                     SizedBox(
                       height: 30.0,
                     ),
-                    // DelayedAnimation(
-                    //   child: GestureDetector(
-                    //     onTap: () {
-                    //       showSignUp(context);
-                    //     },
-                    //     child: Text(
-                    //       "I Have Not Had An Account".toUpperCase(),
-                    //       style: TextStyle(
-                    //         fontFamily: 'GoogleSans',
-                    //         fontSize: 10.0,
-                    //         fontWeight: FontWeight.normal,
-                    //         color: color,
-                    //       ),
-                    //     ),
-                    //   ),
-                    //   delay: delayedAmount + 700,
-                    // ),
                   ],
                 ),
               ),
@@ -292,7 +273,8 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                               color: Colors.white),
                         ),
                         onPressed: () {
-                          login(userNameController.text, passwordController.text);
+                          print(userNameController.text);
+                          print(passwordController.text);
                           Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => MainScreen()),
