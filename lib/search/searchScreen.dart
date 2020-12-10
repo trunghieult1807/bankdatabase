@@ -96,13 +96,18 @@ class Search extends SearchDelegate {
     );
   }
 
-  String selectedResult = "";
+  List<CustomerInfo> searchResult = [];
 
   @override
   Widget buildResults(BuildContext context) {
     return Container(
       child: Center(
-        child: Text(selectedResult),
+        child: Column(
+          children: [
+            for ( var customer in searchResult ) CustomerInfoView(customer)
+          ],
+        ),
+
       ),
     );
   }
@@ -122,11 +127,58 @@ class Search extends SearchDelegate {
           ),
           leading: SizedBox(),
           onTap: (){
-            selectedResult = suggestionList[index];
+            query = suggestionList[index];
+            searchResult = search(query);
             showResults(context);
           },
         );
       },
+    );
+  }
+}
+
+
+
+
+class CustomerInfoView extends StatelessWidget {
+  @override
+  CustomerInfoView(CustomerInfo customer){
+    this.customer = customer;
+  }
+  CustomerInfo customer;
+  Widget build(BuildContext context) {
+    // Material is a conceptual piece of paper on which the UI appears.
+    return Container(
+        padding: EdgeInsets.only(top:16),
+      child: ClipRRect(
+        borderRadius: BorderRadius.circular(14.0),
+      // Column is a vertical, linear layout.
+      child:  Container(
+        color: Color(0xFFEEEEEE),
+      padding: EdgeInsets.all(28),
+      child: Column(
+        children: <Widget>[
+          Text("First name: " + customer.firstName, style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20.0,
+            color: Colors.black,
+          )),
+          SizedBox(height: 8),
+          Text("Last name: " + customer.lastName, style: TextStyle(
+            fontWeight: FontWeight.bold,
+            fontSize: 20.0,
+            color: Colors.black,
+          )),
+          SizedBox(height: 10),
+          Text("Phone number: " + customer.phoneNumber, style: TextStyle(
+            fontWeight: FontWeight.normal,
+            fontSize: 20.0,
+            color: Colors.black,
+          ))
+        ],
+      ),
+      )
+    )
     );
   }
 }
