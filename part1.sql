@@ -231,6 +231,7 @@ SET CONSTRAINTS fk_code_emp_phone  DEFERRED;
 SET CONSTRAINTS fk_code_cust_phone  DEFERRED;
 SET CONSTRAINTS fk_acc_type_code  DEFERRED;
 
+SET datestyle = "ISO, DMY";
 
 -- Set account type
 INSERT INTO Account_type VALUES ('1', 'Saving Account');
