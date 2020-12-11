@@ -1,8 +1,8 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:bankdatabase/login/delayed_animation.dart';
-import 'package:bankdatabase/home/mainScreen.dart';
-
+import 'package:bankdatabase/home/mainScreenController.dart';
+import 'package:bankdatabase/backend.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -273,8 +273,8 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                               color: Colors.white),
                         ),
                         onPressed: () {
-                          print(userNameController.text);
-                          print(passwordController.text);
+                          login(userNameController.text, passwordController.text);
+                          raw();
                           Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => MainScreen()),
