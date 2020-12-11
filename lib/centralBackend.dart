@@ -32,7 +32,7 @@ bool checkVarChar(int n, String s) {
 }
 
 bool checkValid(String fname, String lname, String email, String home_addr,
-    String off_addr, String emp_code) {
+    String off_addr, String emp_code, String phone) {
   int flag = 1;
   if (fname == "") {
     print("fname cannot null");
@@ -57,15 +57,16 @@ bool checkValid(String fname, String lname, String email, String home_addr,
   if (!checkVarChar(30, email)) {
     print("email exceeds 30 chars");
     flag = 0;
-  } else {
-    List<dynamic> customer = connection.query(
-        "SELECT * FROM Customer WHERE email = @email",
-        substitutionValues: {"email": email});
-    if (customer != []) {
-      print("email must be unique");
-      flag = 0;
-    }
   }
+  // else {
+  //   List<dynamic> customer = connection.query(
+  //       "SELECT * FROM Customer WHERE email = @email",
+  //       substitutionValues: {"email": email});
+  //   if (customer != []) {
+  //     print("email must be unique");
+  //     flag = 0;
+  //   }
+  // }
   if (!checkVarChar(50, home_addr)) {
     print("home_addr exceeds 50 chars");
     flag = 0;
@@ -78,12 +79,16 @@ bool checkValid(String fname, String lname, String email, String home_addr,
     print("emp_code not fix 7 chars");
     flag = 0;
   }
+  if (!checkChar(10, phone)) {
+    print("phone not fix 10 chars");
+    flag = 0;
+  }
   return flag == 1 ? true : false;
 }
 
 void createCustomer(String fname, String lname, String email, String home_addr,
-    String off_addr, String emp_code, DateTime serve_date) async {
-  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code)) {
+    String off_addr, String emp_code, DateTime serve_date, String phone) async {
+  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code, phone)) {
     await connection.query("""
     INSERT INTO Customer 
     VALUES ('cus0001', @fname, @lname, @email, @home_addr, @off_addr, @emp_code, @serve_date)""",
@@ -107,8 +112,9 @@ void updateCustomer(
     String home_addr,
     String off_addr,
     String emp_code,
-    DateTime serve_date) async {
-  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code)) {
+    DateTime serve_date,
+    String phone) async {
+  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code, phone)) {
     List<dynamic> customer = await connection.query(
         "SELECT * FROM Customer WHERE code = @code",
         substitutionValues: {"code": code});
@@ -157,17 +163,26 @@ void deleteCustomer(String code) async {
       subtitutionValues: {"code": code});
 }
 
-
-
-class CustomerInfo{
-  CustomerInfo(String fname, String lname, String pnumber, String code){
+class CustomerInfo {
+  CustomerInfo(String fname, String lname, String pnumber, String code, String email, String home_addr, String off_addr, String emp_code, DateTime serve_date) {
     this.firstName = fname;
     this.lastName = lname;
     this.phoneNumber = pnumber;
     this.code = code;
+    this.email = email;
+    this.home_addr = home_addr;
+    this.off_addr = off_addr;
+    this.emp_code = emp_code;
+    this.serve_date = serve_date;
   }
+
   String firstName;
   String lastName;
   String phoneNumber;
   String code;
+  String email;
+  String home_addr;
+  String off_addr;
+  String emp_code;
+  DateTime serve_date;
 }
