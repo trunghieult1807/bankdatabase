@@ -1,8 +1,9 @@
 import 'package:avatar_glow/avatar_glow.dart';
 import 'package:flutter/material.dart';
 import 'package:bankdatabase/login/delayed_animation.dart';
-import 'package:bankdatabase/home/mainScreenController.dart';
-import 'package:bankdatabase/backend.dart';
+import 'package:bankdatabase/home/homeScreenController.dart';
+import 'package:bankdatabase/home/createCustomer.dart';
+import 'package:bankdatabase/centralBackend.dart';
 
 class LoginScreen extends StatefulWidget {
   @override
@@ -274,7 +275,6 @@ class _LoginScreenState extends State<LoginScreen> with SingleTickerProviderStat
                         ),
                         onPressed: () {
                           login(userNameController.text, passwordController.text);
-                          raw();
                           Navigator.push(
                             context,
                             MaterialPageRoute(builder: (context) => MainScreen()),

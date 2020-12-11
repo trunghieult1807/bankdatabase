@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-
+import 'package:bankdatabase/home/createCustomer.dart';
 class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
@@ -49,7 +49,11 @@ class HomeScreen extends StatelessWidget {
                 FlatButton(
                   padding: EdgeInsets.only(bottom: 10.0),
                   textColor: Colors.white,
-                  onPressed: () {},
+                  onPressed: () {
+                    Navigator.push(
+                        context,
+                        MaterialPageRoute(builder: (context) => CreateCustomer()));
+                  },
                   child: Icon(Icons.add),
                   shape: CircleBorder(side: BorderSide(color: Colors.transparent)),
                 ),

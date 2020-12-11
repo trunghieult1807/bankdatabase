@@ -2,7 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:bankdatabase/login/loginScreen.dart';
 import 'package:flutter_phoenix/flutter_phoenix.dart';
-import 'package:bankdatabase/backend.dart';
+import 'package:bankdatabase/centralbackend.dart';
 
 void main() {
   WidgetsFlutterBinding.ensureInitialized();

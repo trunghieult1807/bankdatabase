@@ -20,8 +20,11 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fcb20b4-a6c8-45bb-baf0-e6ea8ef8951c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/home/homeScreen.dart" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/lib/home/mainScreenController.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home/createCustomer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/home/homeScreenController.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/search/editCustomer.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/search/searchBackend.dart" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/search/searchScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/.filecache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/app.dill" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.d" afterDir="false" />
@@ -40,11 +43,11 @@
       <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/backend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/backend.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/accountScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/accountScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/homeScreenController.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/mainScreen.dart" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/searchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/searchScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/backend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/centralBackend.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/accountScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/account/accountScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/homeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/homeScreen.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/mainScreenController.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/mainScreenController.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/home/searchScreen.dart" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/loginScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/loginScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/login/signUpScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/login/signUpScreen.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/main.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/main.dart" afterDir="false" />
@@ -53,6 +56,13 @@
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Dart File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -101,26 +111,30 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="WindowStateProjectService">
+    <state x="578" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1607664136840">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="578" y="276" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1607664136840" />
     <state x="100" y="100" width="1480" height="850" key="AVDManager" timestamp="1607483727312">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="AVDManager/0.0.1680.1050@0.0.1680.1050" timestamp="1607483727312" />
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1607659168187">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom" timestamp="1607673140782">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607659168187" />
-    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1607659168186">
+    <state width="1638" height="295" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607673140782" />
+    <state width="1638" height="295" key="GridCell.Tab.0.center" timestamp="1607673140780">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607659168186" />
-    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1607659168186">
+    <state width="1638" height="295" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607673140780" />
+    <state width="1638" height="295" key="GridCell.Tab.0.left" timestamp="1607673140779">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607659168186" />
-    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1607659168187">
+    <state width="1638" height="295" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607673140779" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right" timestamp="1607673140781">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607659168187" />
+    <state width="1638" height="295" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607673140781" />
     <state x="623" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607615009330">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>

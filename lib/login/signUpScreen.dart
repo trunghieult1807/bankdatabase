@@ -1,6 +1,6 @@
 // import 'package:flutter/material.dart';
 // import 'package:bankdatabase/login/loginScreen.dart';
-// import 'package:bankdatabase/home/mainScreenController.dart';
+// import 'package:bankdatabase/home/homeScreen.dart';
 //
 // class SignUpScreen extends StatefulWidget {
 //   @override
