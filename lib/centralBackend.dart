@@ -187,3 +187,49 @@ class CustomerInfo {
   String emp_code;
   DateTime serve_date;
 }
+
+class SavingAccountInfo {
+  SavingAccountInfo(String number, int code, DateTime date, double balance, double insrate) {
+    this.number = number;
+    this.code = code;
+    this.date = date;
+    this.balance = balance;
+    this.insrate = insrate;
+  }
+
+  String number;
+  int code;
+  DateTime date;
+  double balance;
+  double insrate;
+}
+
+class CheckingAccountInfo {
+  CheckingAccountInfo(String number, int code, DateTime date, double balance) {
+    this.number = number;
+    this.code = code;
+    this.date = date;
+    this.balance = balance;
+  }
+
+  String number;
+  int code;
+  DateTime date;
+  double balance;
+}
+
+class LoanAccountInfo {
+  LoanAccountInfo(String number, int code, DateTime date, double balance, double insrate) {
+    this.number = number;
+    this.code = code;
+    this.date = date;
+    this.balance = balance;
+    this.insrate = insrate;
+  }
+
+  String number;
+  int code;
+  DateTime date;
+  double balance;
+  double insrate;
+}

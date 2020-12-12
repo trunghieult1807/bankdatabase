@@ -20,9 +20,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fcb20b4-a6c8-45bb-baf0-e6ea8ef8951c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/bank_account/bankAccountBackend.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/search/searchBackend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/search/searchBackend.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/bank_account/bankAccountBackend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/bank_account/bankAccountBackend.dart" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/lib/centralBackend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/centralBackend.dart" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -91,22 +92,22 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="100" y="100" width="1480" height="850" key="AVDManager/0.0.1680.1050@0.0.1680.1050" timestamp="1607483727312" />
-    <state width="1638" height="312" key="GridCell.Tab.0.bottom" timestamp="1607739990508">
+    <state width="1638" height="312" key="GridCell.Tab.0.bottom" timestamp="1607757344521">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="312" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607739990508" />
-    <state width="1638" height="312" key="GridCell.Tab.0.center" timestamp="1607739990507">
+    <state width="1638" height="312" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1607757344521" />
+    <state width="1638" height="312" key="GridCell.Tab.0.center" timestamp="1607757344519">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="312" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607739990507" />
-    <state width="1638" height="312" key="GridCell.Tab.0.left" timestamp="1607739990505">
+    <state width="1638" height="312" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1607757344519" />
+    <state width="1638" height="312" key="GridCell.Tab.0.left" timestamp="1607757344518">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="312" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607739990505" />
-    <state width="1638" height="312" key="GridCell.Tab.0.right" timestamp="1607739990507">
+    <state width="1638" height="312" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1607757344518" />
+    <state width="1638" height="312" key="GridCell.Tab.0.right" timestamp="1607757344520">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="312" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607739990507" />
+    <state width="1638" height="312" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1607757344520" />
     <state x="623" y="443" key="com.intellij.openapi.vcs.update.UpdateOrStatusOptionsDialogupdate-v2" timestamp="1607615009330">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
