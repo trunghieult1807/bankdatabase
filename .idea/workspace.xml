@@ -20,32 +20,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="0fcb20b4-a6c8-45bb-baf0-e6ea8ef8951c" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/lib/bank_account/bankAccount.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/.filecache" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/.filecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/app.dill" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/app.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.d" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.d" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.stamp" beforeDir="false" afterPath="$PROJECT_DIR$/.dart_tool/flutter_build/e3d6b84aa898333fc015876195cd66d4/kernel_snapshot.stamp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/lib/bank_account/bankAccountBackend.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" beforeDir="false" afterPath="$PROJECT_DIR$/build/f872507f30e2ff2523f0f1d19160266e.cache.dill.track.dill" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/Debug-iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/App" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/App.framework/flutter_assets/kernel_blob.bin" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Frameworks/Flutter.framework/Flutter" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/Runner" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" beforeDir="false" afterPath="$PROJECT_DIR$/build/ios/iphonesimulator/Runner.app/_CodeSignature/CodeResources" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/centralBackend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/centralBackend.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/createCustomer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/createCustomer.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/home/homeScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/home/homeScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/search/editCustomer.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/search/editCustomer.dart" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/lib/search/searchBackend.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/search/searchBackend.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/lib/search/searchScreen.dart" beforeDir="false" afterPath="$PROJECT_DIR$/lib/search/searchScreen.dart" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/part1.sql" beforeDir="false" afterPath="$PROJECT_DIR$/part1.sql" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />

@@ -1,10 +1,12 @@
-import 'package:postgres/postgres.dart';
 import 'package:bankdatabase/centralBackend.dart';
 
 List<String> suggest(String searchInput){
   const List<String> suggestions = [
     "Hieu",
-    "I Love NKH",
+    "Huy",
+    "Hao",
+    "Thanh",
+    "Madara",
   ];
 
   return suggestions
