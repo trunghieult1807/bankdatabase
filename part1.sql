@@ -99,7 +99,7 @@ CREATE TABLE Saving_account (
 	code			INT					NOT NULL DEFAULT 1 CHECK(code = 1),		--Saving account
 	date			DATE				DEFAULT CURRENT_DATE,
 	balance			NUMERIC(10, 2)		DEFAULT 0,
-	insrate			NUMERIC(3, 2)		DEFAULT 0,
+	insrate			NUMERIC(5, 2)		DEFAULT 0,
 	CHECK(insrate >= 0 AND insrate <= 100 AND balance >= 0),
 	CONSTRAINT fk_saving_acc_code FOREIGN KEY (number, code)
 								  REFERENCES Account(number, acc_type_code)
@@ -123,7 +123,7 @@ CREATE TABLE Loan (
 	code			INT					NOT NULL DEFAULT 3 CHECK(code = 3),		--Loan account,
 	date			DATE				DEFAULT CURRENT_DATE,
 	balance			NUMERIC(10, 2) 		DEFAULT 0,
-	insrate			NUMERIC(3, 2)		DEFAULT 0,
+	insrate			NUMERIC(5, 2)		DEFAULT 0,
 	CHECK(insrate >= 0 AND insrate <= 100 AND balance >= 0),
 	CONSTRAINT fk_loan_acc_code FOREIGN KEY (number, code)
 								REFERENCES Account(number, acc_type_code)
