@@ -284,38 +284,38 @@ INSERT INTO Customer VALUES ('cus0007', 'Siu', 'Nhan', 'siunhangao@gmail.com', '
 INSERT INTO Customer VALUES ('cus0008', 'Xinchao', 'Moinguoi', 'xinchaomoinguoi1807@gmail.com', '3321 Castle, Spring, TX', '450 Stone, Houston, TX', 'emp0003');
 INSERT INTO Customer VALUES ('cus0009', 'Nguyen Van', 'A', 'nguyenvanaaaaa@gmail.com', '213 Loneliness, Tlenen, TX', '450 Histen, Porkie, TX', 'emp0005');
 
-INSERT INTO Account VALUES (1,'1','cus0001');
-INSERT INTO Account VALUES (2,'2','cus0002');
-INSERT INTO Account VALUES (3,'3','cus0003');
-INSERT INTO Account VALUES (4,'1','cus0004');
-INSERT INTO Account VALUES (5,'3','cus0005');
-INSERT INTO Account VALUES (6,'1','cus0006');
-INSERT INTO Account VALUES (7,'2','cus0007');
-INSERT INTO Account VALUES (8,'1','cus0008');
-INSERT INTO Account VALUES (9,'1','cus0009');
-INSERT INTO Account VALUES (10,'2','cus0005');
-INSERT INTO Account VALUES (11,'3','cus0005');
-INSERT INTO Account VALUES (12,'2','cus0004');
-INSERT INTO Account VALUES (13,'2','cus0009');
-INSERT INTO Account VALUES (14,'3','cus0009');
+INSERT INTO Account VALUES (1,1,'cus0001');
+INSERT INTO Account VALUES (2,2,'cus0002');
+INSERT INTO Account VALUES (3,3,'cus0003');
+INSERT INTO Account VALUES (4,1,'cus0004');
+INSERT INTO Account VALUES (5,3,'cus0005');
+INSERT INTO Account VALUES (6,1,'cus0006');
+INSERT INTO Account VALUES (7,2,'cus0007');
+INSERT INTO Account VALUES (8,1,'cus0008');
+INSERT INTO Account VALUES (9,1,'cus0009');
+INSERT INTO Account VALUES (10,2,'cus0005');
+INSERT INTO Account VALUES (11,3,'cus0005');
+INSERT INTO Account VALUES (12,2,'cus0004');
+INSERT INTO Account VALUES (13,2,'cus0009');
+INSERT INTO Account VALUES (14,3,'cus0009');
 
 
-INSERT INTO Saving_account VALUES (1,'1','10/12/2019','10500000', '11');
-INSERT INTO Saving_account VALUES (4,'1','20/02/2019','40040000', '15');
-INSERT INTO Saving_account VALUES (6,'1','11/12/2019','900000', '13');
-INSERT INTO Saving_account VALUES (8,'1','28/12/2019','13004000', '20');
-INSERT INTO Saving_account VALUES (9,'1','11/12/2019','50040000', '24');
+INSERT INTO Saving_account VALUES (1,1,'10/12/2019','10500000', '11');
+INSERT INTO Saving_account VALUES (4,1,'20/02/2019','40040000', '15');
+INSERT INTO Saving_account VALUES (6,1,'11/12/2019','900000', '13');
+INSERT INTO Saving_account VALUES (8,1,'28/12/2019','13004000', '20');
+INSERT INTO Saving_account VALUES (9,1,'11/12/2019','50040000', '24');
 
-INSERT INTO Checking_account VALUES  (2,'2','10/12/2019','10503000');
-INSERT INTO Checking_account VALUES  (7,'2','10/11/2019','10500833');
-INSERT INTO Checking_account VALUES  (10,'2','09/01/2019','20939000');
-INSERT INTO Checking_account VALUES  (12,'2','29/02/2020','10000000');
-INSERT INTO Checking_account VALUES  (13,'2','29/02/2020','10000000');
+INSERT INTO Checking_account VALUES  (2,2,'10/12/2019','10503000');
+INSERT INTO Checking_account VALUES  (7,2,'10/11/2019','10500833');
+INSERT INTO Checking_account VALUES  (10,2,'09/01/2019','20939000');
+INSERT INTO Checking_account VALUES  (12,2,'29/02/2020','10000000');
+INSERT INTO Checking_account VALUES  (13,2,'29/02/2020','10000000');
 
-INSERT INTO Loan VALUES (3,'3','28/02/2019','1839000', '17');
-INSERT INTO Loan VALUES (5,'3','11/02/2019','4099000', '29');
-INSERT INTO Loan VALUES (11,'3','11/04/2019','8000000', '23');
-INSERT INTO Loan VALUES (14,'3','11/04/2019','8000000', '23');
+INSERT INTO Loan VALUES (3,3,'28/02/2019','1839000', '17');
+INSERT INTO Loan VALUES (5,3,'11/02/2019','4099000', '29');
+INSERT INTO Loan VALUES (11,3,'11/04/2019','8000000', '23');
+INSERT INTO Loan VALUES (14,3,'11/04/2019','8000000', '23');
 
 INSERT INTO Branch_fax VALUES ('MCK', '1118390');
 INSERT INTO Branch_fax VALUES ('MCK', '1584848');
