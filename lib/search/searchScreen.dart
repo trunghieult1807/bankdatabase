@@ -112,7 +112,7 @@ class Search extends SearchDelegate {
   Widget buildResults(BuildContext context) {
     return Container(
       child: Center(
-        child: Column(
+        child: ListView(
           children: [
             for (var customer in searchResult)
               FlatButton(
@@ -188,8 +188,8 @@ class CustomerInfoView extends StatelessWidget {
                     color: Colors.black,
                   )),
               SizedBox(height: 10),
-              Text(
-                "Phone number: " + customer.phoneNumber,
+              for (var  phoneNumber in  customer.phoneNumbers) Text(
+                "Phone number: " + phoneNumber,
                 style: TextStyle(
                   fontWeight: FontWeight.normal,
                   fontSize: 20.0,

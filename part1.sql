@@ -38,12 +38,14 @@ CREATE TABLE Employee (
 	branch_name		VARCHAR(20)		NOT NULL,
 	CONSTRAINT fk_emp_branch FOREIGN KEY (branch_name)
 							 REFERENCES Branch(name)
+							 ON UPDATE CASCADE
 							 ON DELETE CASCADE DEFERRABLE
 );
 
 ALTER TABLE Branch
 ADD CONSTRAINT fk_branch_manager FOREIGN KEY (manager_code)
 								 REFERENCES Employee(code)
+								 ON UPDATE CASCADE
 								 ON DELETE CASCADE DEFERRABLE;
 
 CREATE TABLE Customer (
@@ -57,6 +59,7 @@ CREATE TABLE Customer (
 	serve_date		DATE			DEFAULT CURRENT_DATE,
 	CONSTRAINT fk_cust_emp_serve FOREIGN KEY (emp_code)
 								 REFERENCES Employee(code)
+								 ON UPDATE CASCADE
 								 ON DELETE SET NULL DEFERRABLE
 );
 
@@ -67,6 +70,7 @@ CREATE TABLE Account (
 	CONSTRAINT unique_account_type UNIQUE (number, acc_type_code),
 	CONSTRAINT fk_acc_cust_code FOREIGN KEY (cust_code)
 								REFERENCES Customer(code)
+								ON UPDATE CASCADE
 								ON DELETE SET NULL DEFERRABLE
 );
 
@@ -77,7 +81,8 @@ CREATE TABLE Account_type (
 
 ALTER TABLE Account
 ADD CONSTRAINT fk_acc_type_code FOREIGN KEY (acc_type_code) 
-							REFERENCES Account_type(code) 
+							REFERENCES Account_type(code)
+							ON UPDATE CASCADE
 							ON DELETE SET NULL DEFERRABLE;
 
 CREATE TABLE Saving_account (
@@ -89,6 +94,7 @@ CREATE TABLE Saving_account (
 	CHECK(insrate >= 0 AND insrate <= 100 AND balance >= 0),
 	CONSTRAINT fk_saving_acc_code FOREIGN KEY (number, code)
 								  REFERENCES Account(number, acc_type_code)
+								  ON UPDATE CASCADE
 								  ON DELETE CASCADE DEFERRABLE
 );
 
@@ -99,6 +105,7 @@ CREATE TABLE Checking_account (
 	balance			NUMERIC(10, 2)		DEFAULT 0 CHECK(balance >= 0),
 	CONSTRAINT fk_checking_acc_code FOREIGN KEY (number, code)
 									REFERENCES Account(number, acc_type_code)
+									ON UPDATE CASCADE
 									ON DELETE CASCADE DEFERRABLE
 );
 
@@ -111,6 +118,7 @@ CREATE TABLE Loan (
 	CHECK(insrate >= 0 AND insrate <= 100 AND balance >= 0),
 	CONSTRAINT fk_loan_acc_code FOREIGN KEY (number, code)
 								REFERENCES Account(number, acc_type_code)
+								ON UPDATE CASCADE
 								ON DELETE CASCADE DEFERRABLE
 );
 
@@ -120,6 +128,7 @@ CREATE TABLE Branch_phone (
 	PRIMARY KEY (branch_name, phone),
 	CONSTRAINT fk_name_branch_phone FOREIGN KEY (branch_name)
 									REFERENCES Branch(name)
+									ON UPDATE CASCADE
 									ON DELETE CASCADE DEFERRABLE
 );
 
@@ -129,6 +138,7 @@ CREATE TABLE Branch_fax (
 	PRIMARY KEY (branch_name, fax),
 	CONSTRAINT fk_name_branch_fax FOREIGN KEY (branch_name)
 								  REFERENCES Branch(name)
+								  ON UPDATE CASCADE
 								  ON DELETE CASCADE DEFERRABLE
 );
 
@@ -138,6 +148,7 @@ CREATE TABLE Employee_phone (
 	PRIMARY KEY (emp_code, phone),
 	CONSTRAINT fk_code_emp_phone FOREIGN KEY (emp_code)
 								 REFERENCES Employee(code)
+								 ON UPDATE CASCADE
 								 ON DELETE CASCADE DEFERRABLE
 );
 
@@ -147,6 +158,7 @@ CREATE TABLE Customer_phone (
 	PRIMARY KEY (cust_code, phone),
 	CONSTRAINT fk_code_cust_phone FOREIGN KEY (cust_code)
 								  REFERENCES Customer(code)
+								  ON UPDATE CASCADE
 								  ON DELETE CASCADE DEFERRABLE
 );
 

@@ -59,8 +59,8 @@ bool checkValid(String fname, String lname, String email, String home_addr,
     flag = 0;
   }
   // else {
-  //   List<dynamic> customer = connection.query(
-  //       "SELECT * FROM Customer WHERE email = @email",
+  //   String customer = connection.query(
+  //       "SELECT code FROM Customer WHERE email = @email",
   //       substitutionValues: {"email": email});
   //   if (customer != []) {
   //     print("email must be unique");
@@ -86,13 +86,14 @@ bool checkValid(String fname, String lname, String email, String home_addr,
   return flag == 1 ? true : false;
 }
 
-void createCustomer(String fname, String lname, String email, String home_addr,
+void createCustomer(String code, String fname, String lname, String email, String home_addr,
     String off_addr, String emp_code, DateTime serve_date, String phone) async {
-  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code, phone)) {
+  if (checkValid(fname, lname, email, home_addr, off_addr, emp_code, phone) && checkChar(7, code) && code != "") {
     await connection.query("""
     INSERT INTO Customer 
-    VALUES ('cus0001', @fname, @lname, @email, @home_addr, @off_addr, @emp_code, @serve_date)""",
+    VALUES (@code, @fname, @lname, @email, @home_addr, @off_addr, @emp_code, @serve_date)""",
         substitutionValues: {
+          "code": code,
           "fname": fname,
           "lname": lname,
           "email": email,
@@ -164,10 +165,10 @@ void deleteCustomer(String code) async {
 }
 
 class CustomerInfo {
-  CustomerInfo(String fname, String lname, String pnumber, String code, String email, String home_addr, String off_addr, String emp_code, DateTime serve_date) {
+  CustomerInfo(String fname, String lname, List<String> pnumber, String code, String email, String home_addr, String off_addr, String emp_code, DateTime serve_date) {
     this.firstName = fname;
     this.lastName = lname;
-    this.phoneNumber = pnumber;
+    this.phoneNumbers = pnumber;
     this.code = code;
     this.email = email;
     this.home_addr = home_addr;
@@ -178,7 +179,7 @@ class CustomerInfo {
 
   String firstName;
   String lastName;
-  String phoneNumber;
+  List<String> phoneNumbers;
   String code;
   String email;
   String home_addr;

@@ -1,30 +1,26 @@
 import 'package:flutter/material.dart';
 import 'package:bankdatabase/centralBackend.dart';
 import 'package:flutter/cupertino.dart';
-import 'package:bankdatabase/bank_account/bankAccount.dart';
 
-class EditCustomer extends StatefulWidget {
+class BankAccount extends StatefulWidget {
   @override
-  EditCustomer(CustomerInfo customer) {
-    this.customer = customer;
+  BankAccount(String code) {
+    this.code = code;
   }
+  String code;
 
-  CustomerInfo customer;
-
-  _EditCustomerState createState() => new _EditCustomerState(customer);
+  _BankAccountState createState() => new _BankAccountState(code);
 }
 
-class _EditCustomerState extends State<EditCustomer> {
+class _BankAccountState extends State<BankAccount> {
   final formKey = new GlobalKey<FormState>();
   String fname, lname, code, email, home_addr, off_addr, emp_code, phone;
   DateTime serve_date;
 
   @override
-  _EditCustomerState(CustomerInfo customer) {
-    this.customer = customer;
+  _BankAccountState(String code) {
+    this.code = code;
   }
-
-  CustomerInfo customer;
 
   Widget build(BuildContext context) {
     return Scaffold(
@@ -73,8 +69,7 @@ class _EditCustomerState extends State<EditCustomer> {
               onPressed: () {
                 final form = formKey.currentState;
                 form.save();
-                updateCustomer(code, fname, lname, email, home_addr, off_addr,
-                    emp_code, serve_date, phone);
+                updateCustomer(code, fname, lname, email, home_addr, off_addr, emp_code, serve_date, phone);
                 Navigator.of(context).pop(true);
               },
               child: Icon(Icons.save),
@@ -111,10 +106,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              code = customer.code;
-                            } else
-                              code = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -126,7 +118,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.code,
+                            labelText: code,
                             icon: Icon(Icons.assignment_ind),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -152,11 +144,8 @@ class _EditCustomerState extends State<EditCustomer> {
                         padding: EdgeInsets.all(10),
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
-                          onSaved: (val) {
-                            if (val == "") {
-                              fname = customer.firstName;
-                            } else
-                              fname = val;
+                          onSaved: (val){
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -168,7 +157,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.firstName,
+                            labelText: code,
                             icon: Icon(Icons.article),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -195,10 +184,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              lname = customer.lastName;
-                            } else
-                              lname = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -210,7 +196,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.lastName,
+                            labelText: code,
                             icon: Icon(Icons.article_outlined),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -231,37 +217,6 @@ class _EditCustomerState extends State<EditCustomer> {
                         ),
                       ),
                     ),
-                    for (var phoneNumber in customer.phoneNumbers)
-                      SingleChildScrollView(
-                        child: Container(
-                          padding: EdgeInsets.all(10),
-                          child: TextFormField(
-                            style: TextStyle(color: Colors.black),
-                            onSaved: (val) {
-                              if (val == "") {
-                                phone = phoneNumber;
-                              } else
-                                phone = val;
-                            },
-                            decoration: InputDecoration(
-                              enabledBorder: const OutlineInputBorder(
-                                borderSide: const BorderSide(
-                                    color: Colors.black, width: 1.0),
-                              ),
-                              border: OutlineInputBorder(
-                                borderRadius: const BorderRadius.all(
-                                  const Radius.circular(10.0),
-                                ),
-                              ),
-                              labelText: phoneNumber,
-                              icon: Icon(Icons.phone),
-                              labelStyle: TextStyle(
-                                color: Colors.black,
-                              ),
-                            ),
-                          ),
-                        ),
-                      ),
                     Container(
                       child: Text(
                         'Email',
@@ -280,10 +235,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              email = customer.email;
-                            } else
-                              email = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -295,7 +247,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.email,
+                            labelText: code,
                             icon: Icon(Icons.email),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -322,10 +274,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              home_addr = customer.home_addr;
-                            } else
-                              home_addr = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -337,7 +286,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.home_addr,
+                            labelText: code,
                             icon: Icon(Icons.location_on),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -364,10 +313,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              off_addr = customer.off_addr;
-                            } else
-                              off_addr = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -379,7 +325,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.off_addr,
+                            labelText: code,
                             icon: Icon(Icons.location_city),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -406,10 +352,7 @@ class _EditCustomerState extends State<EditCustomer> {
                         child: TextFormField(
                           style: TextStyle(color: Colors.black),
                           onSaved: (val) {
-                            if (val == "") {
-                              emp_code = customer.emp_code;
-                            } else
-                              emp_code = val;
+
                           },
                           decoration: InputDecoration(
                             enabledBorder: const OutlineInputBorder(
@@ -421,7 +364,7 @@ class _EditCustomerState extends State<EditCustomer> {
                                 const Radius.circular(10.0),
                               ),
                             ),
-                            labelText: customer.emp_code,
+                            labelText: code,
                             icon: Icon(Icons.code),
                             labelStyle: TextStyle(
                               color: Colors.black,
@@ -440,43 +383,6 @@ class _EditCustomerState extends State<EditCustomer> {
                           fontSize: 15.0,
                           color: Colors.black,
                         ),
-                      ),
-                    ),
-                    Container(
-                      height: 200,
-                      child: CupertinoDatePicker(
-                        mode: CupertinoDatePickerMode.date,
-                        initialDateTime: customer.serve_date,
-                        onDateTimeChanged: (DateTime newDateTime) {
-                          // Do something
-                        },
-                      ),
-                    ),
-                    Container(
-                      //height: 50,
-                      padding: EdgeInsets.fromLTRB(10, 0, 10, 0),
-                      child: RaisedButton(
-                        shape: RoundedRectangleBorder(
-                          borderRadius: BorderRadius.circular(18.0),
-                          side: BorderSide(color: Colors.white),
-                        ),
-                        textColor: Colors.white,
-                        color: Colors.transparent,
-                        child: Text(
-                          'View Bank Account',
-                          style: TextStyle(
-                              fontFamily: 'Lato',
-                              fontWeight: FontWeight.normal,
-                              fontSize: 18.0,
-                              color: Colors.white),
-                        ),
-                        onPressed: () {
-                          Navigator.push(
-                              context,
-                              MaterialPageRoute(
-                                  builder: (context) =>
-                                      BankAccount(customer.code)));
-                        },
                       ),
                     ),
                   ],
