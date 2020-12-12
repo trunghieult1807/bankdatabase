@@ -471,6 +471,7 @@ class _EditCustomerState extends State<EditCustomer> {
                               color: Colors.white),
                         ),
                         onPressed: () {
+
                           Navigator.push(
                               context,
                               MaterialPageRoute(

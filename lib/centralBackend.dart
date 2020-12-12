@@ -189,7 +189,7 @@ class CustomerInfo {
 }
 
 class SavingAccountInfo {
-  SavingAccountInfo(String number, int code, DateTime date, double balance, double insrate) {
+  SavingAccountInfo(String number, int code, DateTime date, String balance, String insrate) {
     this.number = number;
     this.code = code;
     this.date = date;
@@ -200,12 +200,12 @@ class SavingAccountInfo {
   String number;
   int code;
   DateTime date;
-  double balance;
-  double insrate;
+  String balance;
+  String insrate;
 }
 
 class CheckingAccountInfo {
-  CheckingAccountInfo(String number, int code, DateTime date, double balance) {
+  CheckingAccountInfo(String number, int code, DateTime date, String balance) {
     this.number = number;
     this.code = code;
     this.date = date;
@@ -215,11 +215,11 @@ class CheckingAccountInfo {
   String number;
   int code;
   DateTime date;
-  double balance;
+  String balance;
 }
 
 class LoanAccountInfo {
-  LoanAccountInfo(String number, int code, DateTime date, double balance, double insrate) {
+  LoanAccountInfo(String number, int code, DateTime date, String balance, String insrate) {
     this.number = number;
     this.code = code;
     this.date = date;
@@ -230,6 +230,6 @@ class LoanAccountInfo {
   String number;
   int code;
   DateTime date;
-  double balance;
-  double insrate;
+  String balance;
+  String insrate;
 }

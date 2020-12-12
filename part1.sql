@@ -89,7 +89,7 @@ CREATE TABLE Account_type (
 );
 
 ALTER TABLE Account
-ADD CONSTRAINT fk_acc_type_code FOREIGN KEY (acc_type_code) 
+ADD CONSTRAINT fk_acc_type_code FOREIGN KEY (acc_type_code)
 							REFERENCES Account_type(code)
 							ON UPDATE CASCADE
 							ON DELETE SET NULL DEFERRABLE;
@@ -174,7 +174,7 @@ CREATE TABLE Customer_phone (
 -- Derived total number of employees in branch------------------------------------
 -- Function ----------------------------------------------
 CREATE OR REPLACE FUNCTION func_insert_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -188,7 +188,7 @@ CREATE OR REPLACE FUNCTION func_insert_employee()
 	$$;
 
 CREATE OR REPLACE FUNCTION func_update_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -200,13 +200,13 @@ CREATE OR REPLACE FUNCTION func_update_employee()
 		UPDATE Branch
 		SET total_emp = total_emp + 1
 		WHERE name = NEW.branch_name;
-	
+
 		RETURN NEW;
 	END;
 	$$;
 
 CREATE OR REPLACE FUNCTION func_delete_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -220,7 +220,7 @@ CREATE OR REPLACE FUNCTION func_delete_employee()
 	$$;
 
 -- Trigger ------------------------------------------------
-CREATE TRIGGER Insert_employee 
+CREATE TRIGGER Insert_employee
 	AFTER INSERT
 	ON Employee
 	FOR EACH ROW
@@ -429,7 +429,7 @@ CREATE TABLE Account_type (
 );
 
 ALTER TABLE Account
-ADD CONSTRAINT fk_acc_type_code FOREIGN KEY (acc_type_code) 
+ADD CONSTRAINT fk_acc_type_code FOREIGN KEY (acc_type_code)
 							REFERENCES Account_type(code)
 							ON UPDATE CASCADE
 							ON DELETE SET NULL DEFERRABLE;
@@ -514,7 +514,7 @@ CREATE TABLE Customer_phone (
 -- Derived total number of employees in branch------------------------------------
 -- Function ----------------------------------------------
 CREATE OR REPLACE FUNCTION func_insert_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -528,7 +528,7 @@ CREATE OR REPLACE FUNCTION func_insert_employee()
 	$$;
 
 CREATE OR REPLACE FUNCTION func_update_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -540,13 +540,13 @@ CREATE OR REPLACE FUNCTION func_update_employee()
 		UPDATE Branch
 		SET total_emp = total_emp + 1
 		WHERE name = NEW.branch_name;
-	
+
 		RETURN NEW;
 	END;
 	$$;
 
 CREATE OR REPLACE FUNCTION func_delete_employee()
-	RETURNS TRIGGER 
+	RETURNS TRIGGER
 	LANGUAGE PLPGSQL
 	AS
 	$$
@@ -560,7 +560,7 @@ CREATE OR REPLACE FUNCTION func_delete_employee()
 	$$;
 
 -- Trigger ------------------------------------------------
-CREATE TRIGGER Insert_employee 
+CREATE TRIGGER Insert_employee
 	AFTER INSERT
 	ON Employee
 	FOR EACH ROW
